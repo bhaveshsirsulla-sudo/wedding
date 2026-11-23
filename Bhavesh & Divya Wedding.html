@@ -1,0 +1,303 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>Bhavesh &amp; Divya Wedding</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Marcellus&family=Pinyon+Script&display=swap">
+<style>
+/* Layout: a full-bleed maroon cover (identical in both themes) carries the blessings, the names and the Muhurtham date between two marigold-and-mango-leaf torans; below it a single narrow column of invitation text on ivory (light) or deep ink (dark), divided by kolam rules. The temple-doorway arch recurs as the shape of the date stamps and countdown tiles. */
+:root{
+  --bg:#FAF2DF; --paper:#FFF8E8; --ink:#34100F; --muted:#6B4636;
+  --maroon:#7A1626; --gold:#8A6112; --line:rgba(138,97,18,.4);
+  --cover-top:#45091A; --cover-bot:#7A1626; --cover-ink:#F6E7C1; --cover-gold:#E6BE5A;
+  --display:"Marcellus","Cormorant Garamond",Georgia,serif;
+  --serif:"Cormorant Garamond",Georgia,"Times New Roman",serif;
+  --script:"Pinyon Script","Snell Roundhand","Apple Chancery",cursive;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#150A0C; --paper:#211012; --ink:#F3E5C6; --muted:#C8AD8E;
+    --maroon:#EBA9B0; --gold:#DDB45A; --line:rgba(221,180,90,.38);
+    color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#150A0C; --paper:#211012; --ink:#F3E5C6; --muted:#C8AD8E;
+  --maroon:#EBA9B0; --gold:#DDB45A; --line:rgba(221,180,90,.38);
+  color-scheme:dark;
+}
+
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font-family:var(--serif);font-size:19px;line-height:1.55;-webkit-font-smoothing:antialiased}
+h1,h2,p,ul{margin:0;padding:0}
+ul{list-style:none}
+
+/* ---------- cover and footer band ---------- */
+.band{position:relative;overflow:hidden;color:var(--cover-ink);background:linear-gradient(180deg,var(--cover-top) 0%,var(--cover-bot) 100%)}
+.cover{margin-top:calc(-1 * env(safe-area-inset-top,0px));padding-top:env(safe-area-inset-top,0px)}
+.toran{height:34px;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='44' height='34' viewBox='0 0 44 34'%3E%3Cpath d='M0 2h44' stroke='%23E6BE5A' stroke-width='1.5'/%3E%3Cpath d='M11 2c-6 9-5 18 0 27c5-9 6-18 0-27z' fill='%232F6B3F'/%3E%3Cpath d='M11 4v22' stroke='%231C4A2A' stroke-width='1'/%3E%3Ccircle cx='33' cy='13' r='8' fill='%23E08A12'/%3E%3Ccircle cx='33' cy='13' r='5' fill='%23F2A92A'/%3E%3Ccircle cx='33' cy='13' r='2' fill='%23B8650A'/%3E%3C/svg%3E") repeat-x center top/44px 34px}
+.band-in{max-width:560px;margin:0 auto;padding-block:30px 46px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));display:flex;flex-direction:column;align-items:center;gap:16px;text-align:center}
+.bless{font-family:var(--display);font-size:13px;letter-spacing:.16em;text-transform:uppercase;color:var(--cover-gold);line-height:1.9}
+.gopuram{width:128px;height:auto;margin-block:6px 0}
+.names{display:flex;flex-direction:column;align-items:center;gap:2px;font-weight:400}
+.chi{font-family:var(--display);font-size:13px;letter-spacing:.24em;text-transform:uppercase;color:var(--cover-ink);opacity:.85}
+.name{font-family:var(--script);font-size:clamp(76px,23vw,116px);line-height:1;color:#FFF3D2;text-shadow:0 2px 18px rgba(0,0,0,.35);padding-inline:.1em}
+.weds{display:flex;align-items:center;gap:14px;font-family:var(--display);font-size:14px;letter-spacing:.4em;text-transform:uppercase;color:var(--cover-gold);margin-block:2px}
+.weds::before,.weds::after{content:"";width:44px;height:1px;background:currentColor;opacity:.6}
+.when{width:100%;display:grid;grid-template-columns:44px minmax(0,1fr) 44px;gap:8px;align-items:end;margin-top:10px;padding-top:24px;border-top:1px solid rgba(230,190,90,.35)}
+.lamp{width:44px;height:auto;display:block}
+.flame{transform-box:fill-box;transform-origin:50% 100%;animation:flicker 2.4s ease-in-out infinite;animation-delay:var(--fd,0s);filter:drop-shadow(0 0 5px rgba(255,190,80,.9))}
+@keyframes flicker{0%,100%{transform:scale(1,1) rotate(0)}30%{transform:scale(.92,1.08) rotate(-2deg)}60%{transform:scale(1.05,.95) rotate(1.5deg)}}
+.when-mid{display:flex;flex-direction:column;gap:4px;min-width:0}
+.when-label{font-family:var(--display);font-size:12.5px;letter-spacing:.2em;text-transform:uppercase;color:var(--cover-gold)}
+.when-date{font-family:var(--display);font-size:clamp(26px,8vw,34px);line-height:1.15;letter-spacing:.04em;color:#FFF3D2}
+.when-time{font-style:italic;font-size:20px;line-height:1.3}
+.when-place{font-size:16px;opacity:.8}
+.rise{animation:rise .9s cubic-bezier(.2,.7,.2,1) both;animation-delay:var(--d,0s)}
+@keyframes rise{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+
+/* ---------- body sections ---------- */
+.col{max-width:560px;margin:0 auto;padding-block:38px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));display:flex;flex-direction:column;align-items:center;gap:20px;text-align:center}
+.eyebrow{font-family:var(--display);font-weight:400;font-size:12.5px;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);line-height:1.6;text-wrap:balance}
+.divider{width:168px;height:20px;color:var(--gold);flex:none}
+.lead{font-style:italic;color:var(--muted);text-wrap:pretty}
+.elders{display:flex;flex-direction:column;gap:2px;font-family:var(--display);font-size:clamp(20px,5.6vw,25px);line-height:1.35;color:var(--maroon)}
+.elders .amp{font-family:var(--script);font-size:34px;line-height:1;color:var(--gold)}
+.union{display:flex;flex-direction:column;align-items:center;gap:6px}
+.union-name{font-family:var(--display);font-size:clamp(19px,5.4vw,28px);letter-spacing:.05em;text-transform:uppercase;color:var(--maroon);line-height:1.3}
+.union-weds{font-family:var(--script);font-size:34px;line-height:1.1;color:var(--gold)}
+.union-sub{font-style:italic;color:var(--muted);max-width:30ch;text-wrap:balance}
+
+.tiles{width:100%;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px}
+.tile{min-width:0;display:flex;flex-direction:column;align-items:center;gap:2px;padding:20px 2px 12px;background:var(--paper);border:1px solid var(--line);border-radius:44px 44px 6px 6px}
+.tile b{font-family:var(--display);font-weight:400;font-size:clamp(26px,8.4vw,36px);line-height:1.1;color:var(--maroon);font-variant-numeric:tabular-nums}
+.tile span{font-family:var(--display);font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+.cd-note{min-height:1.6em;font-style:italic;color:var(--muted)}
+
+.event{width:100%;display:flex;flex-direction:column;align-items:center;gap:22px}
+.stamp{width:96px;display:flex;flex-direction:column;align-items:center;padding:16px 4px 12px;background:var(--paper);border:1px solid var(--line);border-radius:48px 48px 6px 6px;line-height:1.1;flex:none}
+.stamp .wd{font-family:var(--display);font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--gold)}
+.stamp .dn{font-family:var(--display);font-size:42px;color:var(--maroon);margin-block:4px 2px}
+.stamp .mo{font-family:var(--display);font-size:13px;letter-spacing:.2em;text-transform:uppercase;color:var(--ink)}
+.stamp .yr{font-size:15px;color:var(--muted);margin-top:2px}
+.event-body{display:flex;flex-direction:column;align-items:center;gap:8px;min-width:0}
+.event-time{font-family:var(--display);font-size:30px;line-height:1.2;color:var(--maroon)}
+.event-note{font-style:italic;color:var(--muted)}
+.venue-label{font-family:var(--display);font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);margin-top:8px}
+.venue-name{font-weight:600;font-size:21px;line-height:1.3;text-wrap:balance}
+.addr{color:var(--muted);font-size:18px;text-wrap:pretty}
+.maps{display:inline-flex;gap:6px;margin-top:6px;font-family:var(--display);font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--gold);text-decoration:none;border-bottom:1px solid var(--line);padding-bottom:3px}
+.maps:hover{border-bottom-color:var(--gold)}
+a:focus-visible{outline:2px solid var(--gold);outline-offset:4px}
+@media (min-width:480px){
+  .event{flex-direction:row;align-items:flex-start;text-align:left;gap:26px}
+  .event-body{align-items:flex-start}
+}
+
+.comp{width:100%;display:flex;flex-direction:column}
+.comp li{padding-block:10px;border-top:1px dotted var(--line);text-wrap:balance}
+.comp li:last-child{border-bottom:1px dotted var(--line)}
+.display-line{font-family:var(--display);font-size:clamp(20px,5.6vw,24px);line-height:1.4;color:var(--maroon);text-wrap:balance}
+.signoff{font-family:var(--script);font-size:clamp(48px,14vw,62px);line-height:1.1;color:var(--gold)}
+.closing{font-style:italic;font-size:clamp(21px,5.8vw,25px);line-height:1.4;color:var(--maroon);text-wrap:balance}
+
+.foot-in{padding-block:26px 48px}
+.foot-names{font-family:var(--script);font-size:clamp(54px,16vw,72px);line-height:1.1;color:#FFF3D2}
+.foot-date{font-family:var(--display);font-size:13px;letter-spacing:.3em;text-transform:uppercase;color:var(--cover-gold)}
+
+@media (prefers-reduced-motion:reduce){*{animation:none!important}}
+</style>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <defs>
+    <symbol id="kolam" viewBox="0 0 200 24">
+      <path d="M0 12h70M130 12h70" stroke="currentColor" stroke-width="1" opacity=".6" fill="none"/>
+      <path d="M100 2l10 10-10 10-10-10z" fill="none" stroke="currentColor" stroke-width="1.3"/>
+      <circle cx="100" cy="12" r="2.2" fill="currentColor"/>
+      <circle cx="80" cy="12" r="2" fill="currentColor"/>
+      <circle cx="120" cy="12" r="2" fill="currentColor"/>
+      <path d="M62 12l-6-4v8zM138 12l6-4v8z" fill="currentColor" opacity=".7"/>
+    </symbol>
+    <symbol id="lamp" viewBox="0 0 40 96">
+      <g class="flame">
+        <path d="M20 4c5 6 5 12 0 16c-5-4-5-10 0-16z" fill="#FFD27A"/>
+        <path d="M20 11c2 3 2 5 0 7c-2-2-2-4 0-7z" fill="#F29A1F"/>
+      </g>
+      <path d="M8 26c0 5 5 8 12 8s12-3 12-8z" fill="#E6BE5A"/>
+      <path d="M18 34h4v28h-4z" fill="#C79A33"/>
+      <ellipse cx="20" cy="43" rx="6" ry="2.2" fill="#E6BE5A"/>
+      <ellipse cx="20" cy="53" rx="5" ry="2" fill="#E6BE5A"/>
+      <path d="M9 88c0-6 5-12 11-12s11 6 11 12z" fill="#E6BE5A"/>
+      <rect x="7" y="88" width="26" height="3.5" rx="1.75" fill="#C79A33"/>
+    </symbol>
+  </defs>
+</svg>
+
+<main>
+  <header class="band cover">
+    <div class="toran" aria-hidden="true"></div>
+    <div class="band-in">
+      <p class="bless rise" style="--d:.05s">॥ Om Shri Ganeshaya Namah ॥</p>
+      <p class="bless rise" style="--d:.15s">॥ Om Shri Lakshmi Narasimha Swamy Prasanna ॥</p>
+
+      <svg class="gopuram rise" style="--d:.25s" viewBox="0 0 160 110" fill="none" stroke="#E6BE5A" stroke-width="1.4" stroke-linejoin="round" aria-hidden="true">
+        <path d="M30 106h100"/>
+        <path d="M40 106V92h80v14"/>
+        <path d="M48 92l4-16h56l4 16"/>
+        <path d="M54 76l4-14h44l4 14"/>
+        <path d="M60 62l4-13h32l4 13"/>
+        <path d="M66 49l4-11h20l4 11"/>
+        <path d="M72 38l3-9h10l3 9"/>
+        <path d="M80 29V15"/>
+        <path d="M80 15c-4-3-4-9 0-12c4 3 4 9 0 12z"/>
+        <path d="M72 106v-9a8 8 0 0 1 16 0v9"/>
+        <path d="M56 84h48M62 69h36M67 55h26" opacity=".5"/>
+      </svg>
+
+      <h1 class="names rise" style="--d:.35s">
+        <span class="chi">Chi.</span>
+        <span class="name">Bhavesh</span>
+        <span class="weds">weds</span>
+        <span class="chi">Chi. La. Sow.</span>
+        <span class="name">Divya</span>
+      </h1>
+
+      <div class="when rise" style="--d:.55s">
+        <svg class="lamp" viewBox="0 0 40 96" aria-hidden="true"><use href="#lamp"/></svg>
+        <div class="when-mid">
+          <p class="when-label">Wedding Muhurtham</p>
+          <p class="when-date">16.12.2026</p>
+          <p class="when-time">Wednesday · 11:59 AM</p>
+          <p class="when-place">Navsari, Gujarat</p>
+        </div>
+        <svg class="lamp" style="--fd:-1.2s" viewBox="0 0 40 96" aria-hidden="true"><use href="#lamp" style="--fd:-1.2s"/></svg>
+      </div>
+    </div>
+  </header>
+
+  <section class="col" aria-labelledby="h-bless">
+    <h2 class="eyebrow" id="h-bless">With the divine blessings of</h2>
+    <p class="elders">
+      <span>Late Shri Balraj B. Sirsulla</span>
+      <span class="amp">&amp;</span>
+      <span>Late Smt. Jamuna B. Sirsulla</span>
+    </p>
+    <svg class="divider" viewBox="0 0 200 24" aria-hidden="true"><use href="#kolam"/></svg>
+    <p class="lead">We cordially solicit your blessings and request the pleasure of your gracious presence, along with your family, on the auspicious occasion of the wedding ceremony of our beloved only son</p>
+    <div class="union">
+      <p class="union-name">Chi. Bhavesh</p>
+      <p class="union-weds">weds</p>
+      <p class="union-name">Chi. La. Sow. Divya</p>
+      <p class="union-sub">Daughter of Shri Venkatesh A. Alwal &amp; Smt. Kavita V. Alwal</p>
+    </div>
+  </section>
+
+  <section class="col" aria-labelledby="h-count">
+    <svg class="divider" viewBox="0 0 200 24" aria-hidden="true"><use href="#kolam"/></svg>
+    <h2 class="eyebrow" id="h-count">The celebration begins in</h2>
+    <div class="tiles" role="timer" aria-live="off">
+      <div class="tile"><b id="cd-d">00</b><span>Days</span></div>
+      <div class="tile"><b id="cd-h">00</b><span>Hours</span></div>
+      <div class="tile"><b id="cd-m">00</b><span>Minutes</span></div>
+      <div class="tile"><b id="cd-s">00</b><span>Seconds</span></div>
+    </div>
+    <p class="cd-note" id="cd-note">Counting down to the Muhurtham, 16 December 2026, 11:59 AM IST</p>
+  </section>
+
+  <section class="col" aria-labelledby="h-muhurtham">
+    <svg class="divider" viewBox="0 0 200 24" aria-hidden="true"><use href="#kolam"/></svg>
+    <article class="event">
+      <div class="stamp" aria-hidden="true">
+        <span class="wd">Wed</span><span class="dn">16</span><span class="mo">Dec</span><span class="yr">2026</span>
+      </div>
+      <div class="event-body">
+        <h2 class="eyebrow" id="h-muhurtham">Wedding Muhurtham</h2>
+        <p class="display-line" style="color:var(--ink)">Wednesday, 16th December 2026</p>
+        <p class="event-time">At 11:59 AM</p>
+        <p class="event-note">Shatabhisha Nakshatram – Kumbha Lagnam</p>
+        <p class="venue-label">Venue</p>
+        <p class="venue-name">Shree Saurashtra Leuva Patel Seva Samaj Wadi</p>
+        <p class="addr">Taskand Nagar, Jalalpore,<br>Navsari, Gujarat – 396445.</p>
+        <a class="maps" href="https://www.google.com/maps/search/?api=1&amp;query=Shree%20Saurashtra%20Leuva%20Patel%20Seva%20Samaj%20Wadi%2C%20Taskand%20Nagar%2C%20Jalalpore%2C%20Navsari%2C%20Gujarat%20396445" target="_blank" rel="noopener">Open in Maps ↗</a>
+      </div>
+    </article>
+  </section>
+
+  <section class="col" aria-labelledby="h-reception">
+    <svg class="divider" viewBox="0 0 200 24" aria-hidden="true"><use href="#kolam"/></svg>
+    <article class="event">
+      <div class="stamp" aria-hidden="true">
+        <span class="wd">Sun</span><span class="dn">20</span><span class="mo">Dec</span><span class="yr">2026</span>
+      </div>
+      <div class="event-body">
+        <h2 class="eyebrow" id="h-reception">Wedding Reception</h2>
+        <p class="display-line" style="color:var(--ink)">Sunday, 20th December 2026</p>
+        <p class="event-time">At 7:00 PM</p>
+        <p class="venue-label">Venue</p>
+        <p class="venue-name">Akhil Padmashali Samaj – Bhavna Baug</p>
+        <p class="addr">6th Lane, Shankar Rao Pupala Road, Kamathipura,<br>Mumbai, Maharashtra – 400008.</p>
+        <a class="maps" href="https://www.google.com/maps/search/?api=1&amp;query=Akhil%20Padmashali%20Samaj%20Bhavna%20Baug%2C%206th%20Lane%2C%20Shankar%20Rao%20Pupala%20Road%2C%20Kamathipura%2C%20Mumbai%20400008" target="_blank" rel="noopener">Open in Maps ↗</a>
+      </div>
+    </article>
+  </section>
+
+  <section class="col" aria-labelledby="h-comp">
+    <svg class="divider" viewBox="0 0 200 24" aria-hidden="true"><use href="#kolam"/></svg>
+    <h2 class="eyebrow" id="h-comp">With best compliments from</h2>
+    <ul class="comp">
+      <li>Vinayak B. Chilka – Anjali V. Chilka</li>
+      <li>Narsimlu B. Sirsulla – Jyoti N. Sirsulla</li>
+      <li>Srinivas B. Sirsulla – Deepa S. Sirsulla</li>
+      <li>Narsayya P. Balla – Chandrakala N. Balla</li>
+      <li>Naresh S. Balla – Saraswathi N. Balla</li>
+      <li>Ganesh S. Alwala – Vijaya G. Alwala</li>
+    </ul>
+  </section>
+
+  <section class="col" aria-labelledby="h-fam">
+    <h2 class="eyebrow" id="h-fam">Invitation from brothers &amp; sisters</h2>
+    <p class="display-line">Sneha, Niraj, Harshvardhan &amp; Yogesh</p>
+    <svg class="divider" viewBox="0 0 200 24" aria-hidden="true"><use href="#kolam"/></svg>
+    <h2 class="eyebrow">Special invitation</h2>
+    <p class="lead">With love from the niece</p>
+    <p class="signoff">Nishka Chilka</p>
+  </section>
+
+  <section class="col" aria-labelledby="h-res">
+    <svg class="divider" viewBox="0 0 200 24" aria-hidden="true"><use href="#kolam"/></svg>
+    <h2 class="eyebrow" id="h-res">Residence</h2>
+    <p class="addr">Room No. 9, Building No. 105,<br>5th Lane, Kamathipura,<br>Mumbai, Maharashtra – 400008.</p>
+    <a class="maps" href="https://www.google.com/maps/search/?api=1&amp;query=5th%20Lane%2C%20Kamathipura%2C%20Mumbai%20400008" target="_blank" rel="noopener">Open in Maps ↗</a>
+    <p class="closing">Your gracious presence and blessings will make this occasion truly memorable.</p>
+  </section>
+
+  <footer class="band">
+    <div class="toran" aria-hidden="true"></div>
+    <div class="band-in foot-in">
+      <p class="foot-names">Bhavesh &amp; Divya</p>
+      <p class="foot-date">16 · 12 · 2026</p>
+    </div>
+  </footer>
+</main>
+
+<script>
+(function () {
+  var target = new Date("2026-12-16T11:59:00+05:30").getTime();
+  var ids = { d: "cd-d", h: "cd-h", m: "cd-m", s: "cd-s" };
+  var els = {};
+  for (var k in ids) { els[k] = document.getElementById(ids[k]); }
+  var note = document.getElementById("cd-note");
+  function pad(n) { return n < 10 ? "0" + n : String(n); }
+  function tick() {
+    var left = target - Date.now();
+    var s = Math.max(0, Math.floor(left / 1000));
+    els.d.textContent = pad(Math.floor(s / 86400));
+    els.h.textContent = pad(Math.floor((s % 86400) / 3600));
+    els.m.textContent = pad(Math.floor((s % 3600) / 60));
+    els.s.textContent = pad(s % 60);
+    if (left <= 0) { note.textContent = "The Muhurtham is here. Blessings to the couple."; }
+  }
+  tick();
+  setInterval(tick, 1000);
+})();
+</script>
+
+</body></html>
